@@ -1,0 +1,72 @@
+import os
+import sys
+import time
+
+
+def type(ai_text, speed=0.03):
+  for character in ai_text:
+    sys.stdout.write(character)
+    sys.stdout.flush()
+    time.sleep(speed)
+  print("")
+#typing effect inspired by https://stackoverflow.com/questions/20302331/typing-effect-in-python
+
+def welcome():
+  type("Hello! I am DineBot! Your versatile AI assistant for Dining Delight.")
+  time.sleep(0.5)
+  type("I am here to help create dining reservations, as well as answer any questions you may have about our menu, prices, store hours, specials/deals, or location.")
+  time.sleep(0.5)
+  type("To begin, I need to learn more about you to optimize your experience.")
+  time.sleep(0.5)
+  name = input("""\nWhat is your name?
+You: """)
+  type(f"\nNice to meet you {name}!\n")
+  time.sleep(0.5)
+  age = int(input("""What is your age?
+You: """))
+  type('\nThank you! How can I assist you today?')
+
+def
+
+def main_menu():
+  menu = print("""
+  1. Appetizers 
+  2. Entrees
+  3. Drinks
+  4. Deserts
+  5. 
+  
+""")
+  menuSelection = input('You: ')
+  
+  if menuSelection == '1':
+    os.system('clear')
+    type("You have chosen option 1")
+    main_menu()
+  elif menuSelection == '2':
+    os.system('clear')
+    type("You have chosen option 2.")
+    main_menu()
+  elif menuSelection == '3':
+    os.system('clear')
+    type("You have chosen option 3")
+    main_menu()
+  elif menuSelection == '4':
+    os.system('clear')
+    type("You have chosen option 4")
+    main_menu()
+  elif menuSelection == '5':
+    type("Goodbye!")
+    exit()
+  else:
+    print("Invalid response. Please try again.")
+    main_menu()
+
+def book_table():
+  
+
+
+
+  
+welcome()
+main_menu()
